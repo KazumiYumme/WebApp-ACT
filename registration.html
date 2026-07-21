@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form in HTML</title>
+	</head>
+		<body style="text-align:center">
+		<h2>Student Registration Form</h2>
+			<form>
+			<fieldset>
+				<legend>Student Personal Information</legend>
+				<label> Enter your full name</label><br>
+				<input type="text" name="name"><br>
+				<label>Enter your email</label><br>
+				<input type="email" name="email"><br>
+				<label>Enter your password</label><br>
+				<input type="password" name="pass"><br>
+				<label>Enter your age</label><br>
+				<input type="text" name="age"><br>
+				<label>Enter your gender</label><br>
+					<input type="radio" id="gender" name="gender" value="male"/>Male <br>
+					<input type="radio" id="gender" name="gender" value="female"/>Female <br>
+					<input type="radio" id="gender" name="gender" value="prefer not to say"/>Prefer not to say <br>
+				<label for="course"> Favorite subject:</label>
+				<select id="course" name="favorite subject">
+					<option value="" selected disabled>-- select --</option>
+					<option value="math">Mathematics</option>
+					<option value="science">Science</option>
+					<option value="english">English</option>
+					<option value="ICT">ICT</option>
+				</select>
+				
+				<br>
+				Hobby: <br>
+				<input type="checkbox" id="Reading" name="Reading" value="Reading"/>
+				<label for="Reading"> Reading</label><br>
+				<input type="checkbox" id="Sports" name="Sports" value="Sports"/>
+				<label for="Sports"> Sports</label><br>
+				<input type="checkbox" id="Music" name="Music" value="Music"/>
+				<label for="Music"> Music</label><br>
+				<input type="checkbox" id="Gaming" name="Gaming" value="Gaming"/>
+				<label for="Gaming"> Gaming</label><br>
+				
+				<br>Short Introduction: <br>
+				<textarea></textarea><br>
+				
+				<input type="Submit" value="Submit">
+				<input type="Reset" value="Reset"><br>
+			</fieldset>
+			</form>
+		</body>
+</html>
+				
+				
