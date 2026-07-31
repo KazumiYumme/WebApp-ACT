@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="Additemform.css" />
+		<title> Inventory Form </title>
+	</head>	
+	<body>
+	<form class="inventory-form">
+		<h2>Add New Item</h2>
+		
+		<label for="item-name">Item Name</label>
+		<input type="text" id="item-name" name="item-name" required>
+		
+		<label for="item-qty">Quantity</label>
+		<input type="number" id="item-qty" name="item-qty" min="0" required>
+		
+		<label for="item-price">Price</label>
+		<input type="number" id="item-price" name="item-price" step="0.01">
+		
+		<label for="item-category">Category</label>
+		<select id="item-category" name="item-category">
+			<option value="electronics">Electronics</option>
+			<option value="grocery">Grocery</option>
+		</select>
+		
+		<button type="submit">Add Item</button>
+	</form>
+	</body>
+</html>

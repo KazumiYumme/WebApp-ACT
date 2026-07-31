@@ -1,0 +1,21 @@
+.inventory-form {
+	width: 320px;
+	margin: 40px auto;
+	padding: 25px;
+	background: #f9fafc;
+	border: 1px solid #e0e4ee;
+	border-radius: 10px;
+}
+.inventory-form label {
+	display: block;
+	margin-top: 12px;
+	font-weight: 600;
+}
+.inventory-form input,
+.inventory-form select {
+	width: 100%;
+	padding: 8px;
+	margin-top: 6px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
