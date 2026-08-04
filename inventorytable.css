@@ -1,0 +1,20 @@
+.inventory-table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 320px;
+	margin: 60px auto;
+	box-shadow: 0 4px 16px;
+}
+th{
+	border: 1px solid black;
+	padding: 10px;
+	background: #264de4;
+}
+td {
+	border: 1px solid black;
+	padding: 10px;
+	background: gray;
+}
+#yelloww {
+	background: yellow;
+}
