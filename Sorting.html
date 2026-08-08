@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sort 10 Numbers
+        </title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 4px 16px;
+                rgba(0,0,0,0.12);
+            }
+            input {
+                width: 50px;
+                margin: 3px;
+            }
+            button {
+                margin-top: 60px auto;
+                padding: 8px 14px;
+            }
+            #result {
+                margin-top: 15px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Enter 10 Numbers</h2>
+
+        <!-- 10 simple input boxes -->
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <input type="number" id="num3">
+        <input type="number" id="num4">
+        <input type="number" id="num5">
+        <input type="number" id="num6">
+        <input type="number" id="num7">
+        <input type="number" id="num8">
+        <input type="number" id="num9">
+        <input type="number" id="num10">
+
+        <br>
+
+        <button onclick="sortIterative()">Sort</button>
+
+
+  <div id="result"></div>
+
+  <script>
+    function getNumbers() {
+      let numbers = [];
+      for (let i = 1; i <= 10; i++) {
+        let value = document.getElementById("num" + i).value;
+        numbers.push(Number(value));
+      }
+      return numbers;
+    }
+
+    function showResult(sortedArray) {
+      document.getElementById("result").innerText = "Ascending Order: " + sortedArray.join(", ");
+    }
+
+    function sortIterative() {
+      let numbers = getNumbers();
+
+      for (let i = 0; i < numbers.length; i++) {
+        for (let j = 0; j < numbers.length - 1; j++) {
+          if (numbers[j] > numbers[j + 1]) {
+           
+            let temp = numbers[j];
+            numbers[j] = numbers[j + 1];
+            numbers[j + 1] = temp;
+          }
+        }
+      }
+
+      showResult(numbers);
+    }
+  </script>
+    </body>
+</html>
