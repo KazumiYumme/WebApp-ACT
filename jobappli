@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 900px;
+            margin: 0 auto;
+            gap: 20px;
+        }
+
+        form {
+            background-color: white;
+            padding: 25px;
+            flex: 2;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #145dc4;
+        }
+
+        aside {
+            background-color: #1877f2;
+            color: white;
+            padding: 25px;
+            flex: 1;
+            border-radius: 5px;
+        }
+
+        aside h3 {
+            margin-top: 0;
+        }
+
+        aside ul {
+            padding-left: 20px;
+        }
+
+        aside li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Job Application Form -->
+    <form>
+        <h2>Job Application Form</h2>
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number">
+
+        <label for="position">Position Applying For</label>
+        <select id="position">
+            <option>Web Developer</option>
+            <option>Graphic Designer</option>
+            <option>Data Analyst</option>
+            <option>Customer Service Representative</option>
+        </select>
+
+        <label for="experience">Work Experience</label>
+        <textarea id="experience" rows="4" placeholder="Describe your work experience"></textarea>
+
+        <label for="resume">Upload Resume</label>
+        <input type="file" id="resume">
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+    <!-- Aside Section -->
+    <aside>
+        <h3>Application Guidelines</h3>
+        <ul>
+            <li>Complete all required fields.</li>
+            <li>Use a valid email address.</li>
+            <li>Upload your latest resume.</li>
+            <li>Review your information before submitting.</li>
+            <li>Only shortlisted applicants will be contacted.</li>
+        </ul>
+
+        <h3>Office Hours</h3>
+        <p>Monday – Friday</p>
+        <p>8:00 AM – 5:00 PM</p>
+    </aside>
+
+</div>
+
+</body>
+</html>
