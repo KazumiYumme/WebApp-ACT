@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple List</title>
+</head>
+<body>
+  <h1>My List</h1>
+  <input id="word" type="text" placeholder="Type a word">
+  <button onclick="addWord()">Add</button>
+  <ul id="list"></ul>
+
+<script>
+  function addWord() {
+    var input = document.getElementById("word");
+    if (input.value.trim() === "") return;
+    var li = document.createElement("li");
+    li.textContent = input.value;
+    document.getElementById("list").appendChild(li);
+    input.value = "";
+  }
+</script>
+</body>
+</html>
